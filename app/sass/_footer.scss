@@ -1,0 +1,121 @@
+/*=========================== footer styles =========================*/
+footer{
+	background-color: $background-footer;
+		.side-blocks{
+		&:after,
+		&:before{
+			height: 100%;
+		}
+	}
+}
+.widgets-footer{
+	@include flex(flex, row wrap, space-between);
+	position: relative;
+	background-color: $color-dark;
+	padding: 39px 0 53px 0;
+}
+.widget-footer{
+	font-family: $font-family-second;
+	font-size: 12px;
+	width: 31.91%;
+	color: #fff;
+	h3{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 20px;
+		text-align: left;
+		padding-bottom: 28px;
+	}
+}
+.widget-text{
+	padding: 0 5px 0 35px;
+	p{
+		text-transform: capitalize;
+		&:first-child{
+			margin-bottom: 17px;
+		}
+	}	
+}
+.widget-comments{
+	padding: 0 54px 0 39px;
+	.widget-comments__comment{
+		margin-bottom: 19px;
+		.widget-comments__author{
+			color: $color-light;
+		}
+		.widget-comments__date{
+			color: $color-light;
+			margin-top: 12px;
+		}
+	}
+}
+.widget-contact-us{
+	padding: 0 35px 0 5px;
+
+}
+.widget-contact-us__text{
+	text-transform: capitalize;
+	margin-bottom: 17px;
+}
+.widget-contact-us__email{
+	margin-bottom: 21px;
+}
+.social-contact{
+	.social{
+		display: block;
+		width: 30px;
+		height: 30px;
+		float: left;
+		margin-left: 5px;		
+		border-radius: 5px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+.social-facebook{
+	background-color: #6b98ee;
+	color: #fff;
+	padding: 4px 0 0 11px;	
+	border: 1px solid #335393;
+	i{
+		font-size: 24px;
+	}
+}
+.social-twitter{
+	background-color: #92e3ff;
+	color: #fff;	
+	border: 1px solid #25849d;
+	padding: 5px 0 0 5px;	
+	i{
+		font-size: 20px;
+	}
+}
+.social-email{
+	background-color: #f9f9f9;
+	color: #aaaaaa;	
+	border: 1px solid #898989;
+	padding: 2px 0 0 3px;
+	i{
+		font-size: 22px;
+	}
+}
+.social-rss{
+	background-color: #ffb147;
+	color: #fff;	
+	border: 1px solid #ae4600;
+	padding: 3px 0 0 5px;
+	i{
+		font-size: 22px;
+	}
+}
+.social-vimeo{
+	background-color: #1bb8ea;
+	color: #fff;	
+	border: 1px solid #167a99;
+	padding: 5px 0 0 3px;
+	i{
+		font-size: 20px;
+	}
+}
+/*=========================== footer styles(end) =========================*/

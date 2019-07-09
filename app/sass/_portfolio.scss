@@ -1,0 +1,42 @@
+.page-title{
+	background-color: $color-light;
+	margin-bottom: 35px;
+	.page-title__header{
+		background-color: $color-dark;
+		padding: 20px 19px;
+		h1{
+			font-size: 24px;
+			text-transform: uppercase;
+			color: #fff;
+			margin: 0;
+		}
+	}
+}
+.filter{
+	margin-bottom: 37px;
+	ul{
+		@include flex(flex, row wrap, flex-start);
+		li{
+			list-style: none;
+			a{
+				color: $text-color-midle;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 14px;
+				padding: 9px 12px;
+				@include transition(background, 0.8s, ease);
+				&:hover{
+					cursor: pointer;
+					background-color: $color-dark;
+					color: #fff;
+				}
+			}
+		}
+		.active{
+			a{
+				background-color: $color-dark;
+				color: #fff;
+			}
+		}
+	}
+}

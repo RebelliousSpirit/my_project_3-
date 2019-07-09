@@ -1,0 +1,61 @@
+/*=========================== main css =========================*/
+body{
+	font-family: $main-font-family;
+	background-color: $background-body;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	background-color: $background-body;
+}
+img{
+	width: 100%;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h2{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.line{
+	display: block;
+	text-align: left;			
+	background-image: $background-line;
+	float: left;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrap{
+	@include flex(flex, row wrap, space-between);
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.text-two-column{
+	column-count: 2;
+	column-gap: 21px;
+	-webkit-column-count:2;
+	-moz--column-count:2;
+	-webkit-column-gap:21px;
+	-moz-column-gap:21px;
+}
+.text-three-column{
+	column-count: 3;
+	column-gap: 21px;
+	-webkit-column-count: 3;
+	-moz-column-gap: 21px;
+	-moz-column-count: 3;
+	-webkit-column-gap: 21px;
+}
+
+/*=========================== main css(end) =========================*/

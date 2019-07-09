@@ -1,0 +1,86 @@
+/*=========================== content styles =========================*/
+.service-list{
+	@include flex(flex, row wrap, space-between);
+	padding: 40px 0 46px 0;	
+}
+.service-part{
+	width: 28.541%;
+	&:nth-child(1){
+		margin-left: 0;
+	}
+	h2{
+		color: $color-dark;
+		margin-bottom: 35px;
+		position: relative;
+		padding-left: 70px;		
+		span{
+			display: block;
+			width: 48px;
+			font-size: 46px;
+			position: absolute;
+			top: -10px;
+			left: 0;
+		}
+	}
+	p{
+		font: 12px $font-family-second;
+		text-transform: capitalize;
+		text-align: left;
+		color: $text-color-dark;
+		margin-bottom: 22px;
+	}
+	a{
+		font-size: 12px;
+		text-transform: uppercase;
+		background-color: $button-color;
+		text-align: center;
+		padding: 10px 15px;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.works{
+	@include flex(flex, row wrap, space-between);
+	margin-bottom: 44px;
+	.works__header{
+		width: 100%;
+		background-image: $background-line;
+		margin-bottom: 24px;
+		span{
+			padding-right: 21px;
+		}		
+	}
+	span:nth-child(1){
+		background-color: $background-body;
+		padding-right: 25px;
+	}
+}
+.work{
+	width: 22.9166%;
+	background-color: #fff;	
+	.work__info{
+		padding: 14px;
+		border-left: 1px solid #dbdbdb;
+		border-right: 1px solid #dbdbdb;
+		border-bottom: 1px solid #dbdbdb;
+		a,
+		p{
+			text-align: left;
+			text-transform: uppercase;
+		}
+		h4{
+			margin: 0 0 8px 0;
+			a{
+				font-size: 16px;
+				color: $text-color-midle;
+				text-decoration: none;
+			}			
+		}
+		p{
+			font-size: 11px;
+			color: $color-dark;
+			margin: 0;
+		}
+	}
+}
+/*=========================== content styles end =========================*/

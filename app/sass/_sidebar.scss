@@ -1,0 +1,49 @@
+/*=========================== sidebar styles =========================*/
+.sidebar{
+	max-width: 220px;
+	order: 2;
+}
+.widget{
+	margin-bottom: 40px;
+	h3{
+		font-size: 14px;
+		background-image: $background-line;
+		color: $color-dark;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		span{
+			background-color: $background-body;
+			padding-right: 17px;
+		}
+	}
+	p{
+		font: 12px $font-family-second;
+		text-transform: capitalize;
+		color: $text-color-dark;
+	}
+}
+.widget-categories{
+	li{
+		a{
+			font-size: 12px;
+			color: $text-color-dark;
+			font-family: $font-family-second;
+			text-transform: capitalize;
+			@include transition(all, 0.6s, ease);
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.widget-galery{
+	.galery{
+		@include flex(flex, row wrap, space-between);
+		figure{
+			max-width: 50px;
+			border: 1px solid $color-dark;
+			margin-bottom: 5px;
+		}
+	}
+}
+/*=========================== sidebar styles(end) =========================*/

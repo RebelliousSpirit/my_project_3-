@@ -1,0 +1,61 @@
+.content-contact-us{
+	max-width: 675px;
+	@include flex(flex, row wrap, space-between);
+	margin-bottom: 36px;
+}
+.contact-map{
+	width: 100%;
+	margin-bottom: 31px;
+}
+.about-company{
+	max-width: 180px;
+	font: 12px $font-family-second;
+	color: $text-color-midle;
+	text-align: left;
+}
+.about-company__description,
+.about-company__adress{
+	margin-bottom: 16px;
+}
+.about-company__company-name{
+	color: $color-dark;
+}
+.contact-form{
+	font-size: 12px;
+	text-transform: uppercase;
+	max-width: 465px;
+	display: block;
+}
+.contact-form__name,
+.contact-form__last-name,
+.contact-form__email,
+.contact-form__message{
+	display: block;
+	border: 1px solid $color-dark;
+	margin-bottom: 12px;
+	text-align: left;
+	color: $color-dark;
+	padding: 11px 13px;
+	outline: none;
+}
+.contact-form__name,
+.contact-form__last-name,
+.contact-form__email{
+	width: 217px;	
+}
+.contact-form__message{
+	width: 464px;
+	height: 203px;
+}
+.contact-form__submit{
+	background-color: $color-dark;
+	color: #fff;
+	padding: 10px 11px;
+	border: none;
+	margin-bottom: 0;
+	@include transition(all, 0.6s, ease);
+	&:hover{
+		background-color: $color-light;
+		cursor: pointer;
+	}
+}

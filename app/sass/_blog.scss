@@ -1,0 +1,82 @@
+/*=========================== blog styles =========================*/
+.blog-content{
+	max-width: 670px;
+	order: 1;
+	margin-bottom: 51px;
+}
+.post{
+	@include flex(flex, row wrap, space-between);
+	font:  12px $font-family-second;
+	text-align: left;
+	margin-bottom: 55px;
+	.line{
+		margin-top: 52px;
+		width: 100%;
+		height: 13px;
+	}
+}
+.post__thumbnail{
+	width: 100%;
+	margin-bottom: 24px;
+}
+.post__info{
+	flex: 2 4 140px; 
+	text-align: left;
+}
+.post__info-block{
+	margin-bottom: 19px;
+	&:last-child{
+		margin-bottom: 0;
+	}	
+}
+.post__info-title{
+	color: $color-dark;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+.post__date,
+.post__tags,
+.post__tags>a,
+.post__comments{
+	color: $text-color-light;
+}
+.post__tags{	
+	a{
+		margin: 0 5px;
+	}
+}
+.post__content{
+	flex: 6 4 520px;
+	p{
+		color: $text-color-dark;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+.post__header{
+	font: 18px $main-font-family;
+	margin-bottom: 25px;
+	color: $color-dark;
+}
+.pagination{
+	ul{
+		@include flex(flex, row wrap, flex-start);
+		li{
+			a{
+				font: 14px $main-font-family;
+				color: #fff;
+				background-color: $color-light;
+				padding: 6px 11px;
+				margin-right: 5px;
+			}
+		}
+		.active{
+			a{
+				background-color: $color-dark;
+			}
+		}
+	}
+}
+/*=========================== blog styles end =========================*/
